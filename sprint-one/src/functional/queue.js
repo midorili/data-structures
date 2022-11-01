@@ -12,10 +12,10 @@ var Queue = function() {
     //add edge case if the length is 1 or 0
     if (Object.keys(storage).length === 1) {
       var firstElement = Object.keys(storage)[0];
-      storage[firstElement + 1] = value;
+      storage[Number(firstElement) + 1] = value;
     } else {
       var lastElement = Object.keys(storage).length - 1;
-      storage[lastElement + 1] = value;
+      storage[Number(lastElement) + 1] = value;
     }
     // added = value;
     // return added;

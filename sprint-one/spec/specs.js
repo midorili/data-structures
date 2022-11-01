@@ -45,6 +45,7 @@ define([
       });
 
       it('does not error when removing from an empty stack', function() {
+
         expect(function() { stack.pop(); }).not.throws();
       });
 
@@ -108,6 +109,7 @@ define([
 
       it('reports a size of zero for a new queue', function() {
         expect(queue.size()).to.equal(0);
+
       });
 
       it('reports a size of 2 after adding two items', function() {
@@ -117,6 +119,7 @@ define([
       });
 
       it('does not error when removing from an empty queue', function() {
+
         expect(function() { queue.dequeue(); }).not.throws();
       });
 
@@ -124,6 +127,7 @@ define([
         queue.enqueue('a');
         queue.enqueue('b');
         queue.dequeue();
+
         expect(queue.size()).to.equal(1);
       });
 

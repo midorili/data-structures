@@ -20,7 +20,9 @@
         $.each(['functional', 'functional-shared', 'prototypal', 'pseudoclassical', 'es6'], function(i, variant) {
           $('<iframe src="' + window.location.toString().replace('.html', 'Section.html?') + variant + '" />').appendTo(document.body);
         });
-
+        // $.each(['functional-shared'], function(i, variant) {
+        //   $('<iframe src="' + window.location.toString().replace('.html', 'Section.html?') + variant + '" />').appendTo(document.body);
+        // });
         $(window).resize(function() {
           $('iframe').height($(this).height());
         }).trigger('resize');
@@ -30,3 +32,4 @@
   <body>
   </body>
 </html>
+
