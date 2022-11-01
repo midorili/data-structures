@@ -27,6 +27,4 @@ class Queue {
   size() {
     return Object.keys(this.storage).length;
   }
-
-
 }
