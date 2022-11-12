@@ -45,9 +45,8 @@ var BinarySearchTree = function(value) {
   tree.depthFirstLog = function(cb) {
     //create inner function and check if values != null
     var traverse = function(tree) {
-
       if (tree.value) {
-        cb(tree.value);
+        cb.call(null, tree.value);
       }
       if (tree.left !== null) {
         traverse(tree.left);
@@ -58,9 +57,9 @@ var BinarySearchTree = function(value) {
     };
     traverse(tree);
   };
-
   return tree;
 
 };
 
 //Complexity: What is the time complexity of the above functions?
+//hi//
