@@ -5,6 +5,10 @@ describe('set', function() {
     set = Set();
   });
 
+  it('should have a property named "_storage"', function() {
+    expect(set._storage).to.be.a('array');
+  });
+
   it('should have methods named "add", "contains", and "remove"', function() {
     expect(set.add).to.be.a('function');
     expect(set.contains).to.be.a('function');

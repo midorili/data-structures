@@ -15,7 +15,7 @@ setPrototype.add = function(item) {
 };
 
 setPrototype.contains = function(item) {
-  console.log(this._storage);
+  //console.log(this._storage);
   if (this._storage.indexOf(item) !== -1) {
     return true;
   } else {

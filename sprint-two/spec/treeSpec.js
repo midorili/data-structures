@@ -11,6 +11,10 @@ describe('tree', function() {
     expect(tree.hasOwnProperty('value')).to.equal(true);
   });
 
+  it('should have a property named "children"', function() {
+    expect(tree.hasOwnProperty('children')).to.equal(true);
+  });
+
   it('should add children to the tree', function() {
     tree.addChild(5);
     expect(tree.children[0].value).to.equal(5);

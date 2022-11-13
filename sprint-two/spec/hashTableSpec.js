@@ -7,6 +7,11 @@ describe('hashTable', function() {
     hashTable = new HashTable();
   });
 
+  it('should have properties names "_limit" and "_storage"', function() {
+    expect(hashTable._limit).to.be.a('number');
+    expect(hashTable._storage).to.be.a('object');
+  });
+
   it('should have methods named "insert", "remove", and "retrieve', function() {
     expect(hashTable.insert).to.be.a('function');
     expect(hashTable.remove).to.be.a('function');

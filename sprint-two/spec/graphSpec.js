@@ -5,6 +5,11 @@ describe('graph', function() {
     graph = new Graph();
   });
 
+  it('should have properties named "nodes" and "edges"', function() {
+    expect(graph.nodes).to.be.a('array');
+    expect(graph.edges).to.be.a('array');
+  });
+
   it('should have methods named "addNode", "contains", "removeNode", "addEdge", "hasEdge", "removeEdge" and "forEachNode"', function() {
     expect(graph.addNode).to.be.a('function');
     expect(graph.contains).to.be.a('function');
